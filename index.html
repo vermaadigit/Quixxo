@@ -11,17 +11,19 @@
 
     <div class="wrapper">
         <div class="whole-div">
-            <nav class="bg-white shadow-lg drop-shadow-lg pb-5 pt-10 h-[100px]">
+            <nav class="bg-white shadow-lg drop-shadow-lg pb-5 pt-10 h-[100px] z-10">
                 <!-- three-div -->
-                <div class="flex justify-evenly gap-10 item-center">
+                <div class="flex justify-evenly gap-10 item-center h-[100px]">
                     <!-- one-div -->
-                    <div class="text-[30px] font-extrabold text-black hover:text-red-500 transition duration-200">
+                    <div class="text-[30px] font-extrabold text-black hover:text-red-500 transition duration-200 pt-[-70px]">
 
-                       Quixxo <span class="text-red-500">.</span>
+                       <img src="/img/img logo 5.jpg" alt=""
+                       loading="lazy"
+                       class="h-[50px] flex items-center justify-between">
 
                     </div>
                     <!-- two-div -->
-                    <div class="flex justify-evenly gap-20 text-[20px] transition duration-200">
+                    <div class="flex justify-evenly gap-14 text-[20px] transition duration-200 mt-3">
 
                        <a href="#" class="text-black hover:text-red-500">Home</a>
                        <a href="#" class="text-black hover:text-red-500">About</a>
@@ -31,51 +33,55 @@
 
                     </div>
                     <!-- three-div -->
-                    <div class="flex justify-evenly gap-10 text-extrabold scale-[1.5] transition duration-200">
+                    <div class="flex justify-evenly text-extrabold transition duration-200 border hover:border-sky-900 w-[120px]
+                     hover:text-white  h-12 pb-15 hover:bg-sky-500 rounded-sm">
 
-                        <i class="fa-sharp fa-solid fa-heart text-black hover:text-red-500"></i>
-                        <i class="fa-sharp fa-solid fa-magnifying-glass text-black hover:text-red-500"></i>
-                        <i class="fa-solid fa-user text-black hover:text-red-500"></i>
+                       <button class="flex justify-center pt-3">LOGIN</button>
 
                     </div>
                 </div>
             </nav>
             <!-- Hero-Section -->
-            <section class="h-[700px] bg-gradient-to-r from-red-500 to-pink-250 relative" >
+            <section class="h-[800px]  relative bg-gradient-to-r from-blue-700 
+            to-green-600 bg-white  p-6 w-full z-0" >
                 <div class="flex">
                     <!-- Two-div -->
                     <div class="flex relative">
                         <!-- one-div -->
-                        <div class="pt-[100px] pl-[100px]">
-                            <h1 class="text-[100px] font-extrabold font-serif">
+                        <div class="pt-[100px] pl-[50px]">
+                            <h1 class="text-[100px] font-extrabold font-serif pl-5">
                                 Quixxo
                             </h1>
-                            <h3 class="text-[40px] font-lightbold text-red-700 font-serif gap-10">
+                            <h3 class="text-[40px] font-lightbold text-red-700 font-serif gap-10 pl-5">
                                 Where Every Stay Feels Just Right!
                             </h3>
-                            <p class="text-[20px] font-serif text-slate-300 mt-5">
+                            <p class="text-[20px] font-serif text-slate-300 mt-5 pl-5 gap-10">
                                 Discover a world where safety meets surprise, <br> 
                                 where every stay is an adventure. Join us as we redefine travel exploration, <br> 
                                 prioritizing your security while unraveling the unexpected. 
                             </p>
-                            <div>
-                                <button class="bg-black text-white rounded-3xl
-                                 hover:bg-red-500 transition-all duration-200 py-[14px] px-[15px] border-none  w-[200px] text-[20px] font-semibold mt-10">
-                                 PLAN TRIP
-                                </button>
+                            <div class=" border h-[60px] mt-10 rounded-md bg-slate-50 flex justify-between items-center w-[500px] ml-5">
+                            
+                                <label for="name"></label>
+                                <input class="text-slate-800 flex items-center justify-center mr-[100px]" type="text" id="name" placeholder="Enter Your Destination ">
+
+                                <button class="bg-indigo-950 text-white h-[40px] w-[100px] flex justify-center items-center rounded-md mr-5 gap-3"> 
+                                <i class="fa-solid fa-magnifying-glass"></i>  Search</button>
                             </div>
+
+                              
                         </div>
                         <!-- two-div -->
                         <div class="absolute">
-                             <img src="/bg-image-1/bg-image_4-removebg-preview.png" alt=""
+                             <img src="/img/img 2.png" alt=""
                              loading="lazy"
-                             class="scale-[1.6] ml-[730px]">
+                             class="scale-[1] ml-[730px]">
                         </div>
                     </div>
                 </div>
             </section>
             <!-- About us section -->
-            <section class="h-[700px]">
+            <section class="h-[800px] mb-52">
                 <div> 
                     <h1 class="text-[100px] flex justify-center items-center mt-[60px] font-extrabold font-serif opacity-80 italic mb-6 gap-5"> <span class="text-red-500">About</span>  Us</h1>
                     <!-- Big-div -->
@@ -118,6 +124,44 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Destination section -->
+            <section class="h-[800px] bg-slate-200">
+                <div>
+                    <p></p>
+                    <h1></h1>
+                    <div>
+                        <!-- 1 -->
+                        <div>
+                           <img src="" alt="">
+                           <h3></h3>
+                           <div>
+                            <div>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                
+                            </div>
+                           </div>
+                        </div>
+                        <!-- 2 -->
+                        <div>
+
+                        </div>
+                        <!-- 3 -->
+                        <div>
+
+                        </div>
+                        <!-- 4 -->
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         </div>
 
     </div>
