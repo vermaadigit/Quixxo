@@ -62,7 +62,7 @@
                             <div class=" border-2 border-indigo-800 h-[60px] mt-10 rounded-md bg-white flex justify-between items-center w-[500px] ml-5  hover:border-indigo-950">
                             
                                 <label for="name"></label>
-                                <input class="text-black flex items-center justify-center mr-[100px]" type="text" id="name" placeholder="Enter Your Destination">
+                                <input class="" type="text" id="name" placeholder="Enter Your Destination">
 
                                 <button class="bg-indigo-950 text-white h-[40px] w-[100px] flex justify-center items-center rounded-md mr-5 gap-3 hover:bg-orange-600"> 
                                 <i class="fa-solid fa-magnifying-glass"></i> Search</button>
@@ -571,19 +571,21 @@
                         </div>
                         <!-- right div -->
                        
-                        <div class="mt-10 h-[500px] w-[500px] flex flex-col gap-5 mr-44  bg-indigo-300 rounded-md">
+                        <div class="mt-10 h-[500px] w-[650px] flex flex-col gap-5 mr-44  bg-indigo-300 rounded-md p-5">
                         
                             <!-- contact div -->
-                             <label for="text"></label>
-                             <input type="text" class=" h-[50px] w-[450px] mx-auto font-bold rounded-md font-serif text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Name">
-                             <label for="email"></label>
-                             <input type="text" class="h-[50px] w-[450px] mx-auto font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border hover:border-indigo-950" placeholder="Enter Your Email">
-                             <label for="contact"></label>
-                             <input type="text" class="h-[50px] w-[450px] mx-auto font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Number">
-                             <textarea name="" id="" cols="20" rows="5" class="font-bold font-serif rounded-md w-[450px] mx-auto text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Message"></textarea>
-                            <button class=" h-[50px] w-[450px] mx-auto bg-orange-600 rounded-md hover:bg-indigo-600 hover:text-white border-2 hover:border-indigo-950  font-bold font-serif text-black shadow-lg shadow-indigo-500/40">Submit</button>
+                             <form name="submit-to-google-sheet"> 
+                                <label for="text"></label>
+                                <input type="text" class=" h-[50px] w-[600px]  font-bold rounded-md font-serif text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Name">
+                                <label for="email"></label>
+                                <input type="text" class="h-[50px] w-[600px] mt-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border hover:border-indigo-950" placeholder="Enter Your Email">
+                                <label for="contact"></label>
+                                <input type="text" class="h-[50px] w-[600px] mt-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Number">
+                                <textarea name="" id="" cols="20" rows="5" class="font-bold font-serif rounded-md w-[600px] mt-5 text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Message"></textarea>
+                                <button class=" h-[50px] w-[300px] mt-5 ml-[140px]  bg-orange-600 rounded-md hover:bg-indigo-600 hover:text-white border-2 hover:border-indigo-950  font-bold font-serif text-black shadow-lg shadow-indigo-500/40">Submit</button>
  
-                         </div>
+                             </form>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -662,6 +664,18 @@
         </div>
 
     </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx3SN60WG8jnX3DJklxkI4YwWWNs3GWFShJS4_921JVEa8RnOpDfJHXoZJj6Scr2y4hLg/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
         
 </body>
 </html>
