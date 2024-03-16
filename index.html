@@ -574,14 +574,15 @@
                         <div class="mt-10 h-[500px] w-[650px] flex flex-col gap-5 mr-44  bg-indigo-300 rounded-md p-5">
                         
                             <!-- contact div -->
-                             <form name="submit-to-google-sheet" action=""> 
+                             <form name="contact-us" action=""> 
+
                                 <label for="text"></label>
-                                <input type="text" class=" h-[50px] w-[600px]  font-bold rounded-md font-serif text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Name">
+                                <input type="text" name="Name" id="Name" class=" h-[50px] w-[600px]  font-bold rounded-md font-serif text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Name">
                                 <label for="email"></label>
-                                <input type="text" class="h-[50px] w-[600px] mt-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border hover:border-indigo-950" placeholder="Enter Your Email">
+                                <input type="email" name="Email" id="" required class="h-[50px] w-[600px] mt-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border hover:border-indigo-950" placeholder="Enter Your Email">
                                 <label for="contact"></label>
-                                <input type="text" class="h-[50px] w-[600px] mt-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Number">
-                                <textarea name="" id="" cols="20" rows="5" class="font-bold font-serif rounded-md w-[600px] mt-5 text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Message"></textarea>
+                                <input type="text" name="Number" class="h-[50px] w-[600px] mt-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Number">
+                                <textarea name="Message" id="" cols="20" rows="5" class="font-bold font-serif rounded-md w-[600px] mt-5 text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Message"></textarea>
                                 <button class=" h-[50px] w-[300px] mt-5 ml-[140px]  bg-orange-600 rounded-md hover:bg-indigo-600 hover:text-white border-2 hover:border-indigo-950  font-bold font-serif text-black shadow-lg shadow-indigo-500/40">Submit</button>
  
                              </form>
@@ -667,7 +668,7 @@
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbx3SN60WG8jnX3DJklxkI4YwWWNs3GWFShJS4_921JVEa8RnOpDfJHXoZJj6Scr2y4hLg/exec'
-        const form = document.forms['submit-to-google-sheet']
+        const form = document.forms['contact-us']
       
         form.addEventListener('submit', e => {
           e.preventDefault()
