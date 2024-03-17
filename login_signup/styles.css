@@ -208,3 +208,15 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+.home-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
