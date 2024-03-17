@@ -13,7 +13,7 @@
 
         <div class="whole-div">
             <!-- navbar -->
-            <nav class="bg-white shadow-lg drop-shadow-lg pb-5 pt-10 h-[100px] z-10">
+            <nav class="bg-white shadow-lg drop-shadow-lg pb-5 pt-10 h-[100px]">
                 <!-- three-div -->
                 <div class="flex justify-evenly gap-10 item-center h-[100px]">
                     <!-- one-div -->
@@ -44,16 +44,22 @@
                 </div>
             </nav>
             <!-- Hero-Section -->
-            <section class="h-[800px]  relative bg-slate-100 w-full z-0" >
+            <section class="h-[800px] relative bg-slate-100 z-0" >
                 <div class="flex">
                     <!-- Two-div -->
-                    <div class="flex relative">
+                    <div class="flex relative ">
                         <!-- one-div -->
+                        <div class="absolute">
+                            <img src="/img/img 2.png" alt=""
+                            loading="lazy"
+                            class="scale-[1] ml-[730px]">
+                        </div>
+                        <!-- two-div -->
                         <div class="pt-[100px] pl-[50px]">
                             <h1 class="text-[100px] font-extrabold font-serif pl-5 text-indigo-950">
                                 Quixxo
                             </h1>
-                            <h3 class="text-[40px] font-lightbold text-orange-600 font-serif gap-10 pl-5">
+                            <h3 class="text-[40px] text-orange-600 font-serif gap-10 pl-5">
                                 Where Every Stay Feels Just Right!
                             </h3>
                             <p class="text-[20px] font-serif text-black mt-5 pl-5 gap-10">
@@ -61,22 +67,15 @@
                                 where every stay is an adventure. Join us as we redefine travel exploration, <br> 
                                 prioritizing your security while unraveling the unexpected. 
                             </p>
-                            <div class=" border-2 border-indigo-800 h-[60px] mt-10 rounded-md bg-white flex justify-between items-center w-[500px] ml-5  hover:border-indigo-950">
+                            <div class="border-2 border-indigo-800 h-[60px] mt-10 rounded-md bg-white flex items-center w-[500px] ml-5  hover:border-indigo-950">
                             
                                 <label for="name"></label>
-                                <input class="" type="text" id="name" placeholder="Enter Your Destination">
-
+                                <input class="w-full" type="text" id="name" placeholder="Enter Your Destination">
+                                
+                        
                                 <button class="bg-indigo-950 text-white h-[40px] w-[100px] flex justify-center items-center rounded-md mr-5 gap-3 hover:bg-orange-600"> 
                                 <i class="fa-solid fa-magnifying-glass"></i> Search</button>
-                            </div>
-
-                              
-                        </div>
-                        <!-- two-div -->
-                        <div class="absolute">
-                             <img src="/img/img 2.png" alt=""
-                             loading="lazy"
-                             class="scale-[1] ml-[730px]">
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -659,7 +658,7 @@
                         <div class=" border h-[60px] mt-10 rounded-md bg-slate-50 flex justify-between items-center">
 
                             <!-- <button class="text-slate-600 flex items-center justify-center pl-5">What do you want to learn </button> -->
-                            
+
                             <label for="What do you want to learn"></label>
                             <input type="email" class="text-slate-600 flex items-center justify-center pl-5" placeholder="What do you want to learn"> 
             
