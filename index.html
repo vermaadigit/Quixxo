@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title> QUIXXO</title>
 </head>
 <body> 
 
-    <div class="wrapper">
+    <div class="wrapper scroll-smooth">
 
         <div class="whole-div">
             <!-- navbar -->
@@ -28,10 +29,10 @@
                     <div class="flex justify-evenly gap-14 text-[20px] transition duration-200 mt-3">
 
                        <a href="#" class="text-black hover:text-orange-600">Home</a>
-                       <a href="#" class="text-black hover:text-orange-600">About</a>
-                       <a href="#" class="text-black hover:text-orange-600">Services</a>
-                       <a href="#" class="text-black hover:text-orange-600">Review</a>
-                       <a href="#" class="text-black hover:text-orange-600">Contact</a>
+                       <a href="#About" class="text-black hover:text-orange-600">About</a>
+                       <a href="#Services" class="text-black hover:text-orange-600">Services</a>
+                       <a href="#Review" class="text-black hover:text-orange-600">Review</a>
+                       <a href="#Contact" class="text-black hover:text-orange-600">Contact</a>
 
                     </div>
                     <!-- three-div -->
@@ -81,7 +82,7 @@
                 </div>
             </section>
             <!-- About us section -->
-            <section class="h-[800px] mb-52">
+            <section class="h-[800px] mb-52" id="About">
                 <div> 
                     <h1 class="text-[80px] flex justify-center items-center mt-[60px] font-extrabold font-serif opacity-90 italic mb-6 gap-5"> <span class="text-orange-600">About</span>  Us</h1>
                     <!-- Big-div -->
@@ -220,7 +221,7 @@
             </section>
 
             <!-- Offer Section -->
-            <section class="h-[1300px] bg-white">
+            <section class="h-[1300px] bg-white" id="Services">
                 <div>
                     <p class="text-orange-500 mx-auto mt-[70px] mb-5 ml-24 font-semibold font-serif">HOW WE WORK</p>
                     <h1 class="text-[70px] font-extrabold font-serif ml-20"> We Offer Best Services</h1>
@@ -318,7 +319,7 @@
             </section>
 
             <!-- Services section -->
-            <section class="h-[1200px] bg-slate-200" id="services">
+            <section class="h-[1200px] bg-slate-200">
                 <div class="">
                     <p class="font-serif font-extrabold  text-orange-600 mx-auto flex justify-center text-[30px] pt-10">-- Services --</p>
                     <h1 class="text-[80px] font-bold font-serif text-black max-h-max mx-auto flex justify-center -mb-20">Latest Services</h1>
@@ -445,7 +446,7 @@
                 </div>
             </section>
             <!-- testimonail section -->
-            <section class="h-[700px]">
+            <section class="h-[700px]" id="Review">
                 <div>
                     <p class="flex justify-center mt-10 text-orange-600 font-serif font-semibold">--Testimonial--</p>
                     <h1 class="flex justify-center  mt-5 text-[50px] font-extrabold font-serif">What Our Clients Says About Us</h1>
@@ -558,7 +559,7 @@
             </section>
 
             <!-- Contact Us Section -->
-            <section class="h-[800px] bg-slate-200">
+            <section class="h-[800px] bg-slate-200" id="Contact">
                 <div class="">
                 
                         <h1 class="text-[80px] flex justify-center pt-10 font-bold font-serif text-black">Contact Us</h1>
