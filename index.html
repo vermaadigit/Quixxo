@@ -68,7 +68,7 @@
                                 where every stay is an adventure. Join us as we redefine travel exploration, <br> 
                                 prioritizing your security while unraveling the unexpected. 
                             </p>
-                            <div class="border-2 border-indigo-800 h-[60px] mt-10 rounded-md bg-white flex items-center w-[500px] ml-5  hover:border-indigo-950">
+                            <!-- <div class="border-2 border-indigo-800 h-[60px] mt-10 rounded-md bg-white flex items-center w-[500px] ml-5  hover:border-indigo-950">
                             
                                 <label for="name"></label>
                                 <input class="w-[400px] h-14 outline-none mr-5 ml-3" type="text" id="name" placeholder="Enter Your Destination">
@@ -76,7 +76,23 @@
                         
                                 <button class="bg-indigo-950 text-white h-[40px] w-[150px] flex justify-center items-center rounded-md mr-5 gap-3 hover:bg-orange-600"> 
                                 <i class="fa-solid fa-magnifying-glass"></i> Search</button>
-                            </div> 
+                            </div>  -->
+
+                            <div class="search-box w-[600px] bg-white rounded-[5px] mt-10 ml-5">
+                                <div class="row flex items-center py-[10px] px-[20px]">
+                                    <input type="text" id="input-box" placeholder="Search your Destination" autocomplete="off"
+                                    class="flex-1 h-[50px] bg-transparent border-0 outline-none font-[18px] text-[#333]">
+                                    <button class="bg-transparent border-none outline-none"><i class="fa-solid fa-magnifying-glass w-[25px] text-[#555]
+                                       text-[22px] cursor-pointer"></i></button>
+                                </div>
+                                <div class="result-box">
+                                    <!-- <ul> 
+                                        <li></li>
+                                        <li></li>
+                                    </ul> -->
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -659,9 +675,9 @@
                         <div class=" border h-[60px] mt-10 rounded-md bg-slate-50 flex justify-between items-center">
 
                             <label for="What do you want to learn"></label>
-                            <input type="email" class="text-slate-600 w-[220px] flex items-center outline-none justify-center" placeholder="What do you want to learn ?"> 
+                            <input type="email" class="text-slate-600 h-full w-full p-5 flex items-center outline-none justify-center" placeholder="What do you want to learn ?"> 
             
-                            <button class="bg-indigo-950 text-white h-[40px] w-[100px] flex justify-center items-center rounded-md mr-5 hover:bg-orange-500"> 
+                            <button class="bg-indigo-950 text-white h-[40px] w-[130px] flex justify-center items-center rounded-md mr-5 hover:bg-orange-500"> 
                             <i class="fa-solid fa-magnifying-glass mr-2"></i>Search</button>
                         </div>
                     </div>
@@ -684,6 +700,7 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script src="autocomplete.js"></script>
         
 </body>
 </html>
