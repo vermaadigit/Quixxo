@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title> QUIXXO</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("search-btn").addEventListener("click", function () {
+                var input = document.getElementById("input-box").value.toLowerCase();
+                switch (input) {
+                    case "indore":
+                        window.location.href = "./City/Indore.html";
+                        break;
+                    case "bhopal":
+                        window.location.href = "./City/bhopal.html";
+                        break;
+                    case "dewas":
+                        window.location.href = "./City/Dewas.html";
+                        break;
+                    case "sehore":
+                        window.location.href = "./City/Sehore.html";
+                        break;
+                    default:
+                        alert("City not found!");
+                        break;
+                }
+            });
+        });
+    </script>
 </head>
-<body> 
+
+<body>
 
     <div class="wrapper">
 
@@ -18,28 +47,30 @@
                 <!-- three-div -->
                 <div class="flex justify-evenly gap-10 item-center h-[100px]">
                     <!-- one-div -->
-                    <div class="text-[30px] font-extrabold text-black hover:text-orange-00 transition duration-200 pt-[-70px]">
 
-                       <img src="/img/img logo 5.jpg" alt=""
-                       loading="lazy"
-                       class="h-[50px] flex items-center justify-between">
+                    <div
+                        class="text-[30px] font-extrabold text-black hover:text-orange-00 transition duration-200 pt-[-70px]">
+
+                        <img src="/img/img logo 5.jpg" alt="" loading="lazy"
+                            class="h-[50px] flex items-center justify-between">
 
                     </div>
                     <!-- two-div -->
                     <div class="flex justify-evenly gap-14 text-[20px] transition duration-200 mt-3">
 
-                       <a href="#" class="text-black hover:text-orange-600">Home</a>
-                       <a href="#About" class="text-black hover:text-orange-600">About</a>
-                       <a href="#Services" class="text-black hover:text-orange-600">Services</a>
-                       <a href="#Review" class="text-black hover:text-orange-600">Review</a>
-                       <a href="#Contact" class="text-black hover:text-orange-600">Contact</a>
+                        <a href="#" class="text-black hover:text-orange-600">Home</a>
+                        <a href="#About" class="text-black hover:text-orange-600">About</a>
+                        <a href="#Services" class="text-black hover:text-orange-600">Services</a>
+                        <a href="#Review" class="text-black hover:text-orange-600">Review</a>
+                        <a href="#Contact" class="text-black hover:text-orange-600">Contact</a>
 
                     </div>
                     <!-- three-div -->
                     <div class="flex justify-evenly text-extrabold transition duration-200 border hover:border-indigo-950 w-[120px]
                      hover:text-white  h-12 pb-15 hover:bg-indigo-900 rounded-sm">
 
-                       <a href="./login_signup/index.html"><button class="flex justify-center w-[120px] pt-3">LOGIN</button></a>
+                        <a href="./login_signup/index.html"><button
+                                class="flex justify-center w-[120px] pt-3">LOGIN</button></a>
 
                     </div>
                 </div>
@@ -51,10 +82,8 @@
                     <div class="flex relative">
                         <!-- one-div -->
                         <div class="absolute">
-                            <img src="/img/img 2.png" alt=""
-                            loading="lazy"
-                            class="scale-[1] ml-[750px]">
-                            
+                            <img src="/img/img 2.png" alt="" loading="lazy" class="scale-[1] ml-[750px]">
+
                         </div>
                         <!-- two-div -->
                         <div class="pt-[100px] pl-[50px] z-50">
@@ -65,9 +94,9 @@
                                 Where Every Stay Feels Just Right!
                             </h3>
                             <p class="text-[20px] font-serif text-black mt-5 pl-5 gap-10">
-                                Discover a world where safety meets surprise, <br> 
-                                where every stay is an adventure. Join us as we redefine travel exploration, <br> 
-                                prioritizing your security while unraveling the unexpected. 
+                                Discover a world where safety meets surprise, <br>
+                                where every stay is an adventure. Join us as we redefine travel exploration, <br>
+                                prioritizing your security while unraveling the unexpected.
                             </p>
                             <!-- <div class="border-2 border-indigo-800 h-[60px] mt-10 rounded-md bg-white flex items-center w-[500px] ml-5  hover:border-indigo-950">
                             
@@ -79,11 +108,14 @@
                                 <i class="fa-solid fa-magnifying-glass"></i> Search</button>
                             </div>  -->
 
-                            <div class="search-box w-[600px] bg-white rounded-[5px] mt-10 ml-5 border-2 hover:border-indigo-900">
+                            <div
+                                class="search-box w-[600px] bg-white rounded-[5px] mt-10 ml-5 border-2 hover:border-indigo-900">
                                 <div class="row flex items-center py-[10px] px-[20px]">
-                                    <input type="text" id="input-box" placeholder="Search your Destination" autocomplete="off"
-                                    class="flex-1 h-[50px] bg-transparent border-0 outline-none font-[18px] text-[#333]">
-                                    <button class="bg-transparent border-none outline-none"><i class="fa-solid fa-magnifying-glass w-[25px] 
+                                    <input type="text" id="input-box" placeholder="Search your Destination"
+                                        autocomplete="off"
+                                        class="flex-1 h-[50px] bg-transparent border-0 outline-none font-[18px] text-[#333]">
+                                    <button id="search-btn" class="bg-transparent border-none outline-none"><i
+                                            class="fa-solid fa-magnifying-glass w-[25px] 
                                        text-[22px] cursor-pointer text-orange-600 hover:text-indigo-900 transition duration-300"></i></button>
                                 </div>
                                 <div class="result-box">
@@ -100,45 +132,50 @@
             </section>
             <!-- About us section -->
             <section class="h-[800px] mb-52" id="About">
-                <div> 
-                    <h1 class="text-[80px] flex justify-center items-center mt-[60px] font-extrabold font-serif opacity-90 italic mb-6 gap-5"> <span class="text-orange-600">About</span>  Us</h1>
+                <div>
+                    <h1
+                        class="text-[80px] flex justify-center items-center mt-[60px] font-extrabold font-serif opacity-90 italic mb-6 gap-5">
+                        <span class="text-orange-600">About</span> Us
+                    </h1>
                     <!-- Big-div -->
                     <div class="flex justify-evenly">
                         <!-- left-div -->
                         <div class="w-[50%] flex gap-10 ">
                             <div class="">
-                                <img src="/image for website/image 11.jpg" alt=""
-                                loading="lazy"
-                                class="h-[40%] mb-10 ml-10 drop-shadow-2xl hover:scale-[1.1] transition duration-500 ">
-                                <img src="/image for website/image 12.jpg" alt=""
-                                loading="lazy"
-                                class="h-[30%] ml-[120px] mb-[100px] -mt-5 drop-shadow-2xl hover:scale-[1.1] transition duration-500">
+                                <img src="/image for website/image 11.jpg" alt="" loading="lazy"
+                                    class="h-[40%] mb-10 ml-10 drop-shadow-2xl hover:scale-[1.1] transition duration-500 ">
+                                <img src="/image for website/image 12.jpg" alt="" loading="lazy"
+                                    class="h-[30%] ml-[120px] mb-[100px] -mt-5 drop-shadow-2xl hover:scale-[1.1] transition duration-500">
                             </div>
                             <div>
-                                <img src="/image for website/image 13.jpg" alt=""
-                                loading="lazy"
-                                class="h-[30%] mt-[80px] mr-10 -ml-3 drop-shadow-2xl hover:scale-[1.1] transition duration-500 ">
-                                <img src="/image for website/image 14.jpg" alt=""
-                                loading="lazy"
-                                class="h-[40%] mt-5 -ml-5 drop-shadow-2xl hover:scale-[1.1] transition duration-500">
+                                <img src="/image for website/image 13.jpg" alt="" loading="lazy"
+                                    class="h-[30%] mt-[80px] mr-10 -ml-3 drop-shadow-2xl hover:scale-[1.1] transition duration-500 ">
+                                <img src="/image for website/image 14.jpg" alt="" loading="lazy"
+                                    class="h-[40%] mt-5 -ml-5 drop-shadow-2xl hover:scale-[1.1] transition duration-500">
                             </div>
                         </div>
                         <!-- Right-div -->
                         <div class="w-[50%] p-[50px] mt-16">
-                              <h1 class="text-[60px] font-extrabold opacity-90 mb-10 font-serif"> <i class="fa-sharp fa-solid fa-magnifying-glass text-orange-600 hover:text-black"></i> Why Choose Us</h1>
-                              <p class="text-[20px] leading-9 opacity-80 font-serif ">
-                                Quixxo is a location-based safety website designed to enhance personal safety by utilizing geographic information. 
+                            <h1 class="text-[60px] font-extrabold opacity-90 mb-10 font-serif"> <i
+                                    class="fa-sharp fa-solid fa-magnifying-glass text-orange-600 hover:text-black"></i>
+                                Why Choose Us</h1>
+                            <p class="text-[20px] leading-9 opacity-80 font-serif ">
+                                Quixxo is a location-based safety website designed to enhance personal safety by
+                                utilizing geographic information.
                                 It includes features like real-time location tracking and, emergency alerts.
-                              </p>
-                              <br>
-                               <p class="text-[20px] leading-9 opacity-80 font-serif ">
-                                Users can share their location with trusted contacts, receive notifications in case of emergencies, and access local safety information. 
-                                Overall, it aims to leverage location data to provide users with a heightened sense of security and quick response in case of potential threats or emergencies.
-                               </p>
-                              <a href="about.html"> <button class="bg-orange-500 text-white rounded-3xl
+                            </p>
+                            <br>
+                            <p class="text-[20px] leading-9 opacity-80 font-serif ">
+                                Users can share their location with trusted contacts, receive notifications in case of
+                                emergencies, and access local safety information.
+                                Overall, it aims to leverage location data to provide users with a heightened sense of
+                                security and quick response in case of potential threats or emergencies.
+                            </p>
+                            <a href="about.html"> <button
+                                    class="bg-orange-500 text-white rounded-3xl
                                 hover:bg-black transition-all duration-200 py-[14px] px-[15px] border-none  w-[200px] text-[20px] font-semibold mt-20">
-                                READ MORE
-                               </button></a>
+                                    READ MORE
+                                </button></a>
                         </div>
                     </div>
                     <div>
@@ -150,89 +187,90 @@
             <!-- Destination section -->
             <section class="h-[800px] bg-slate-200">
                 <div class="mx-auto ml-20 mr-20">
-                    <p class="pt-10 mx-auto items-center text-orange-600  flex justify-center font-semibold">--Top Destination--</p>
+                    <p class="pt-10 mx-auto items-center text-orange-600  flex justify-center font-semibold">--Top
+                        Destination--</p>
                     <h1 class="text-[50px] flex justify-center font-extrabold pb-20"> Explore Top Destination</h1>
                     <div class="flex justify-stretch cover-fit">
                         <!-- 1 -->
-                        <div class="h-[400px] w-[300px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.2] transition duration-300">
-                           <a href="./City/bhopal.html"><img src="/img/img 10.jpg" alt=""
-                            loading="lazy"
-                            class="rounded-t-lg"></a>
-                           <h3 class="mt-5 font-bold ml-5 text-[20px]">Bhopal</h3>
-                           <div class="flex justify-between mt-3">
-                            <div class="ml-5 mb-5">
-                                <span class="fa fa-star text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star"></span>
-                                
+                        <div
+                            class="h-[400px] w-[300px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.2] transition duration-300">
+                            <a href="./City/bhopal.html"><img src="/img/img 10.jpg" alt="" loading="lazy"
+                                    class="rounded-t-lg"></a>
+                            <h3 class="mt-5 font-bold ml-5 text-[20px]">Bhopal</h3>
+                            <div class="flex justify-between mt-3">
+                                <div class="ml-5 mb-5">
+                                    <span class="fa fa-star text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                                <div class="mr-5">
+                                    <span class="text-orange-600 font-semibold">FREE</span>
+                                </div>
                             </div>
-                            <div class="mr-5">
-                                <span class="text-orange-600 font-semibold">FREE</span>
-                            </div>
-                           </div>
                         </div>
                         <!-- 2 -->
-                        <div class="h-[400px] w-[300px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.2] transition duration-300">
-                            <a href="City/Dewas.html"><img src="/img/img 13.jpg" alt=""
-                                loading="lazy"
-                                class="rounded-t-lg"></a>
+                        <div
+                            class="h-[400px] w-[300px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.2] transition duration-300">
+                            <a href="City/Dewas.html"><img src="/img/img 13.jpg" alt="" loading="lazy"
+                                    class="rounded-t-lg"></a>
                             <h3 class="mt-5 font-bold ml-5 text-[20px]">Dewas</h3>
                             <div class="flex justify-between mt-3">
-                             <div class="ml-5 mb-5">
-                                 <span class="fa fa-star text-orange-600"></span>
-                                 <span class="fa fa-star checked text-orange-600"></span>
-                                 <span class="fa fa-star checked text-orange-600"></span>
-                                 <span class="fa fa-star checked text-orange-600"></span>
-                                 <span class="fa fa-star"></span>
-                                 
-                             </div>
-                             <div class="mr-5">
-                                 <span class="text-orange-600 font-semibold">FREE</span>
-                             </div>
-                            </div>
-                         </div>
-                        <!-- 3 -->
-                        <div class="h-[400px] w-[300px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.2] transition duration-300">
-                            <a href="City/Sehore.html"><img src="/img/img 20.jpg" alt=""
-                                loading="lazy"
-                                class="rounded-t-lg"></a>
-                            <h3 class="mt-5 font-bold ml-5 text-[20px]">Sehore</h3>
-                            <div  class="flex justify-between mt-3" >
-                             <div class="ml-5 mb-5">
-                                 <span class="fa fa-star text-orange-600"></span>
-                                 <span class="fa fa-star checked text-orange-600"></span>
-                                 <span class="fa fa-star checked text-orange-600"></span>
-                                 <span class="fa fa-star checked text-orange-600"></span>
-                                 <span class="fa fa-star"></span>
-                                 
+                                <div class="ml-5 mb-5">
+                                    <span class="fa fa-star text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star"></span>
+
                                 </div>
-                             <div class="mr-5">
-                                 <span class="text-orange-600 font-semibold">FREE</span>
-                             </div>
+                                <div class="mr-5">
+                                    <span class="text-orange-600 font-semibold">FREE</span>
+                                </div>
                             </div>
-                         </div>
+                        </div>
+                        <!-- 3 -->
+                        <div
+                            class="h-[400px] w-[300px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.2] transition duration-300">
+                            <a href="City/Sehore.html"><img src="/img/img 20.jpg" alt="" loading="lazy"
+                                    class="rounded-t-lg"></a>
+                            <h3 class="mt-5 font-bold ml-5 text-[20px]">Sehore</h3>
+                            <div class="flex justify-between mt-3">
+                                <div class="ml-5 mb-5">
+                                    <span class="fa fa-star text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                                <div class="mr-5">
+                                    <span class="text-orange-600 font-semibold">FREE</span>
+                                </div>
+                            </div>
+                        </div>
                         <!-- 4 -->
-                        <div class="h-[400px] w-[300px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.2] transition duration-300">
-                            <a href="City/Indore.html"><img src="/img/img 26.jpg" alt=""
-                                loading="lazy"
-                                class="rounded-t-lg"></a>
+                        <div
+                            class="h-[400px] w-[300px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.2] transition duration-300">
+                            <a href="City/Indore.html"><img src="/img/img 26.jpg" alt="" loading="lazy"
+                                    class="rounded-t-lg"></a>
                             <h3 class="mt-5 font-bold ml-5 text-[20px]">Indore</h3>
-                            <div  class="flex justify-between mt-3">
-                             <div class="ml-5 mb-5">
-                                 <span class="fa fa-star text-orange-600"></span>
-                                 <span class="fa fa-star checked text-orange-600"></span>
-                                 <span class="fa fa-star checked text-orange-600"></span>
-                                 <span class="fa fa-star checked text-orange-600"></span>
-                                 <span class="fa fa-star"></span>
-                                 
-                             </div>
-                             <div class="mr-5">
-                                 <span class="text-orange-600 font-semibold">FREE</span>
-                             </div>
+                            <div class="flex justify-between mt-3">
+                                <div class="ml-5 mb-5">
+                                    <span class="fa fa-star text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star checked text-orange-600"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                                <div class="mr-5">
+                                    <span class="text-orange-600 font-semibold">FREE</span>
+                                </div>
                             </div>
-                         </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -246,67 +284,66 @@
                     <div class="flex">
                         <!-- left part -->
                         <div>
-                             <!-- 7 div -->
+                            <!-- 7 div -->
                             <div class="ml-20">
 
                                 <!-- 1 div -->
                                 <div class="h-[100px] w-[500px] flex gap-10 mb-10 mt-10">
-                                    <img src="/img/img 5.svg" alt=""
-                                    loading="lazy"
-                                    class="h-[100px] rounded-full">
+                                    <img src="/img/img 5.svg" alt="" loading="lazy" class="h-[100px] rounded-full">
                                     <div>
                                         <h2 class="font-semibold font-serif mb-5 text-[25px]">Choose Destination</h2>
-                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>  
+                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.</p>
                                     </div>
                                 </div>
                                 <!-- 2 div -->
                                 <div class="h-[100px] w-[500px] flex gap-10 mb-10 mt-10">
-                                    <img src="/img/we 1.avif" alt=""
-                                    loading="lazy"
-                                    class="h-[100px] rounded-full w-[100px]">
+                                    <img src="/img/we 1.avif" alt="" loading="lazy"
+                                        class="h-[100px] rounded-full w-[100px]">
                                     <div>
                                         <h2 class="font-semibold font-serif mb-5 text-[25px]">Hotel</h2>
-                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>  
+                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.</p>
                                     </div>
                                 </div>
                                 <!-- 3 div -->
                                 <div class="h-[100px] w-[500px] flex gap-10 mb-10 mt-10">
-                                    <img src="/img/we 7.jpg" alt=""
-                                    loading="lazy"
-                                    class="h-[100px] rounded-full w-[100px]">
+                                    <img src="/img/we 7.jpg" alt="" loading="lazy"
+                                        class="h-[100px] rounded-full w-[100px]">
                                     <div>
                                         <h2 class="font-semibold font-serif mb-5 text-[25px] ">Medical/Hospitals</h2>
-                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>  
+                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.</p>
                                     </div>
                                 </div>
                                 <!-- 4 div -->
                                 <div class="h-[100px] w-[500px] flex gap-10 mb-10 mt-10">
-                                    <img src="/img/we 6.avif" alt=""
-                                    loading="lazy"
-                                    class="h-[100px] rounded-full w-[100px]">
+                                    <img src="/img/we 6.avif" alt="" loading="lazy"
+                                        class="h-[100px] rounded-full w-[100px]">
                                     <div>
                                         <h2 class="font-semibold font-serif mb-5 text-[25px] ">Restaurant</h2>
-                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>  
+                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.</p>
                                     </div>
                                 </div>
                                 <!-- 5 div -->
                                 <div class="h-[100px] w-[500px] flex gap-10 mb-10 mt-10">
-                                    <img src="/img/we 5.jpg" alt=""
-                                    loading="lazy"
-                                    class="h-[100px] rounded-full w-[100px]">
+                                    <img src="/img/we 5.jpg" alt="" loading="lazy"
+                                        class="h-[100px] rounded-full w-[100px]">
                                     <div>
                                         <h2 class="font-semibold font-serif mb-5 text-[25px]">Wifi Connection</h2>
-                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>  
+                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.</p>
                                     </div>
                                 </div>
                                 <!-- 6 div -->
                                 <div class="h-[100px] w-[500px] flex gap-10 mb-10 mt-10">
-                                    <img src="/img/we 2.jpg" alt=""
-                                    loading="lazy"
-                                    class="h-[100px] rounded-full w-[100px]">
+                                    <img src="/img/we 2.jpg" alt="" loading="lazy"
+                                        class="h-[100px] rounded-full w-[100px]">
                                     <div>
                                         <h2 class="font-semibold font-serif mb-5 text-[25px]">Bus Stand</h2>
-                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>  
+                                        <p class="font-serif opacity-95">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.</p>
                                     </div>
                                 </div>
                                 <!-- 7 div -->
@@ -325,10 +362,9 @@
                         <!-- 2 div -->
                         <div>
                             <div>
-                                <img src="/img/offer_9-removebg-preview.png" alt=""
-                                loading="lazy"
-                                class="scale-[1.5] ml-[250px] mt-[200px]">
-                            
+                                <img src="/img/offer_9-removebg-preview.png" alt="" loading="lazy"
+                                    class="scale-[1.5] ml-[250px] mt-[200px]">
+
                             </div>
                         </div>
                     </div>
@@ -338,239 +374,254 @@
             <!-- Services section -->
             <section class="h-[1200px] bg-slate-200">
                 <div class="">
-                    <p class="font-serif font-extrabold  text-orange-600 mx-auto flex justify-center text-[30px] pt-10">-- Services --</p>
-                    <h1 class="text-[80px] font-bold font-serif text-black max-h-max mx-auto flex justify-center -mb-20">Latest Services</h1>
+                    <p class="font-serif font-extrabold  text-orange-600 mx-auto flex justify-center text-[30px] pt-10">
+                        -- Services --</p>
+                    <h1
+                        class="text-[80px] font-bold font-serif text-black max-h-max mx-auto flex justify-center -mb-20">
+                        Latest Services</h1>
                     <!-- 6 div -->
                     <div class="mx-auto ml-40 mt-10">
-                       <div class="pt-20 flex mr-20 gap-10 mx-auto">
-                         <!-- div-1 -->
-                      <div class="h-[400px] w-[400px] bg-white rounded-sm rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
-                        <img src="/img/services 1.jpg" alt=""
-                        loading="lazy"
-                        class="rounded-t-lg h-[250px] w-full">
-                       <div class="flex justify-between">
-                        <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Bhopal</h1>
-                        <div class="p-5">
-                            <span class="fa fa-star text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star text-orange-600"></span>
-                            
-                        </div>
-                      </div>
-                        <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error,</p>
-                      </div> 
-                        <!-- div-2 -->
-                       <div class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
-                        <img src="/img/services 2.avif" alt=""
-                        loading="lazy"
-                        class="rounded-t-lg h-[250px] w-full">
-                       <div class="flex justify-between">
-                        <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Indore</h1>
-                        <div class="p-5">
-                            <span class="fa fa-star text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star text-orange-600"></span>
-                            
-                        </div>
-                       </div>
-                        <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error,</p>
-                       </div>
-                      <!-- div-3 -->
+                        <div class="pt-20 flex mr-20 gap-10 mx-auto">
+                            <!-- div-1 -->
+                            <div
+                                class="h-[400px] w-[400px] bg-white rounded-sm rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
+                                <img src="/img/services 1.jpg" alt="" loading="lazy"
+                                    class="rounded-t-lg h-[250px] w-full">
+                                <div class="flex justify-between">
+                                    <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Bhopal</h1>
+                                    <div class="p-5">
+                                        <span class="fa fa-star text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star text-orange-600"></span>
 
-                       <div class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
-                        <img src="/img/services 3.webp" alt=""
-                        loading="lazy"
-                        class="rounded-t-lg h-[250px] w-full">
-                       <div class="flex justify-between">
-                        <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Sehore</h1>
-                        <div class="p-5">
-                            <span class="fa fa-star text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star text-orange-600"></span>
-                            
-                        </div>
-                       </div>
-                        <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error,</p>
-                       </div>
+                                    </div>
+                                </div>
+                                <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Amet error,</p>
+                            </div>
+                            <!-- div-2 -->
+                            <div
+                                class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
+                                <img src="/img/services 2.avif" alt="" loading="lazy"
+                                    class="rounded-t-lg h-[250px] w-full">
+                                <div class="flex justify-between">
+                                    <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Indore</h1>
+                                    <div class="p-5">
+                                        <span class="fa fa-star text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star text-orange-600"></span>
 
-                       </div>
-                      <!-- bottom div  -->
-                     <div class="pt-20 flex mr-20 gap-10 mx-auto">
-                        <!-- div=1 -->
-                        <div class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
-                            <img src="/img/services 7.jpg" alt=""
-                            loading="lazy"
-                            class="rounded-t-lg h-[250px] w-full ">
-                           <div class="flex justify-between">
-                            <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Dewas</h1>
-                            <div class="p-5">
-                                <span class="fa fa-star text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star text-orange-600"></span>
-                                
+                                    </div>
+                                </div>
+                                <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Amet error,</p>
                             </div>
-                           </div>
-                            <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error,</p>
-                        </div>
-                        <!-- div-2 -->
-                        <div class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
-                            <img src="/img/services 4.jpg" alt=""
-                            loading="lazy"
-                            class="rounded-t-lg h-[250px] w-full">
-                           <div class="flex justify-between">
-                            <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Ashta</h1>
-                            <div class="p-5">
-                                <span class="fa fa-star text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star text-orange-600"></span>
-                                
+                            <!-- div-3 -->
+
+                            <div
+                                class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
+                                <img src="/img/services 3.webp" alt="" loading="lazy"
+                                    class="rounded-t-lg h-[250px] w-full">
+                                <div class="flex justify-between">
+                                    <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Sehore</h1>
+                                    <div class="p-5">
+                                        <span class="fa fa-star text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star text-orange-600"></span>
+
+                                    </div>
+                                </div>
+                                <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Amet error,</p>
                             </div>
-                           </div>
-                            <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error,</p>
+
                         </div>
-                        <!-- div-3 -->
-                        <div class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
-                            <img src="/img/services 5.webp" alt=""
-                            loading="lazy"
-                            class="rounded-t-lg h-[250px] w-full">
-                           <div class="flex justify-between">
-                            <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Kothri</h1>
-                            <div class="p-5">
-                                <span class="fa fa-star text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star checked text-orange-600"></span>
-                                <span class="fa fa-star text-orange-600"></span>
-                                
+                        <!-- bottom div  -->
+                        <div class="pt-20 flex mr-20 gap-10 mx-auto">
+                            <!-- div=1 -->
+                            <div
+                                class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
+                                <img src="/img/services 7.jpg" alt="" loading="lazy"
+                                    class="rounded-t-lg h-[250px] w-full ">
+                                <div class="flex justify-between">
+                                    <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Dewas</h1>
+                                    <div class="p-5">
+                                        <span class="fa fa-star text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star text-orange-600"></span>
+
+                                    </div>
+                                </div>
+                                <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Amet error,</p>
                             </div>
-                           </div>
-                            <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error,</p>
+                            <!-- div-2 -->
+                            <div
+                                class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
+                                <img src="/img/services 4.jpg" alt="" loading="lazy"
+                                    class="rounded-t-lg h-[250px] w-full">
+                                <div class="flex justify-between">
+                                    <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Ashta</h1>
+                                    <div class="p-5">
+                                        <span class="fa fa-star text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star text-orange-600"></span>
+
+                                    </div>
+                                </div>
+                                <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Amet error,</p>
+                            </div>
+                            <!-- div-3 -->
+                            <div
+                                class="h-[400px] w-[400px] bg-white rounded-sm mx-auto rounded-t-lg shadow-lg shadow-indigo-500/40 hover:scale-[1.1] transition duration-300">
+                                <img src="/img/services 5.webp" alt="" loading="lazy"
+                                    class="rounded-t-lg h-[250px] w-full">
+                                <div class="flex justify-between">
+                                    <h1 class="mt-5 font-bold ml-5 text-[20px] font-serif">Kothri</h1>
+                                    <div class="p-5">
+                                        <span class="fa fa-star text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star checked text-orange-600"></span>
+                                        <span class="fa fa-star text-orange-600"></span>
+
+                                    </div>
+                                </div>
+                                <p class="p-2 pb-10 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Amet error,</p>
+                            </div>
                         </div>
+
                     </div>
 
-                 </div>
-                    
                 </div>
             </section>
             <!-- testimonail section -->
             <section class="h-[700px]" id="Review">
                 <div>
                     <p class="flex justify-center mt-10 text-orange-600 font-serif font-semibold">--Testimonial--</p>
-                    <h1 class="flex justify-center  mt-5 text-[50px] font-extrabold font-serif">What Our Clients Says About Us</h1>
+                    <h1 class="flex justify-center  mt-5 text-[50px] font-extrabold font-serif">What Our Clients Says
+                        About Us</h1>
                     <!--Testinomial Section div  -->
                     <div class="flex justify-center mx-auto gap-10 mt-20">
                         <!-- div-1 -->
-                        <div class="h-[320px] w-[300px] bg-slate-300 shadow-lg shadow-indigo-500/40 hover:bg-indigo-600 hover:text-white transition duration-500">
-                            <i class="fa-sharp fa-solid fa-quote-right ml-[240px] -mt-10 scale-[4] text-orange-600 "></i>
-                          <div class="flex justify-center">
-                            <img src="/img/img 25.jpg" alt=""
-                            loading="lazy"
-                            class="h-[100px] rounded-full mt-10 ml-1 hover:scale-[1.2] transition duration-300">
-                            <div>
-                                <h2 class="text-[18px] font-bold font-serif ml-2 mt-10">ADITYA VERMA</h2>
-                                <p class="mt-2 ml-3 font-light font-serif">Hye Everyone</p>
-    
+                        <div
+                            class="h-[320px] w-[300px] bg-slate-300 shadow-lg shadow-indigo-500/40 hover:bg-indigo-600 hover:text-white transition duration-500">
+                            <i
+                                class="fa-sharp fa-solid fa-quote-right ml-[240px] -mt-10 scale-[4] text-orange-600 "></i>
+                            <div class="flex justify-center">
+                                <img src="/img/img 25.jpg" alt="" loading="lazy"
+                                    class="h-[100px] rounded-full mt-10 ml-1 hover:scale-[1.2] transition duration-300">
+                                <div>
+                                    <h2 class="text-[18px] font-bold font-serif ml-2 mt-10">ADITYA VERMA</h2>
+                                    <p class="mt-2 ml-3 font-light font-serif">Hye Everyone</p>
+
+                                </div>
                             </div>
-                          </div>
-                         
-                          <p class="mt-5 ml-5 font-thin font-serif opacity-80"> Lorem ipsum dolor sit amet, consectetur adipisicing
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                          </p>
-                          <div class="flex justify-center pb-5">
-                            <span class="fa fa-star text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star checked text-orange-600"></span>
-                            <span class="fa fa-star"></span>
-                            
-                        </div>
+
+                            <p class="mt-5 ml-5 font-thin font-serif opacity-80"> Lorem ipsum dolor sit amet,
+                                consectetur adipisicing
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="flex justify-center pb-5">
+                                <span class="fa fa-star text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star"></span>
+
+                            </div>
 
                         </div>
                         <!-- div-2 -->
-                        <div class="h-[320px] w-[320px] bg-slate-300 shadow-lg shadow-indigo-500/40 hover:bg-indigo-600 hover:text-white transition duration-500">
+                        <div
+                            class="h-[320px] w-[320px] bg-slate-300 shadow-lg shadow-indigo-500/40 hover:bg-indigo-600 hover:text-white transition duration-500">
                             <i class="fa-sharp fa-solid fa-quote-right ml-[260px] -mt-10 scale-[4] text-orange-600"></i>
                             <div class="flex">
-                              <img src="/img/img 31.jpg" alt=""
-                              loading="lazy"
-                              class="h-[100px] rounded-full mt-10 ml-5 hover:scale-[1.2] transition duration-300">
-                              <div>
-                                <h2 class="text-[18px] font-bold font-serif ml-2 mt-10">SHAGUFA ANJUM</h2>
-                                 <p class="mt-2 ml-3 font-light font-serif">Hello Everyone</p>
-                              </div>
+                                <img src="/img/img 31.jpg" alt="" loading="lazy"
+                                    class="h-[100px] rounded-full mt-10 ml-5 hover:scale-[1.2] transition duration-300">
+                                <div>
+                                    <h2 class="text-[18px] font-bold font-serif ml-2 mt-10">SHAGUFA ANJUM</h2>
+                                    <p class="mt-2 ml-3 font-light font-serif">Hello Everyone</p>
+                                </div>
                             </div>
-                            <p class="mt-5 ml-5 font-thin font-serif opacity-80"> Lorem ipsum dolor sit amet, consectetur adipisicing
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                              </p>
-                            <div class="flex justify-center mt-5 mb-5">
-                              <span class="fa fa-star text-orange-600"></span>
-                              <span class="fa fa-star checked text-orange-600"></span>
-                              <span class="fa fa-star checked text-orange-600"></span>
-                              <span class="fa fa-star checked "></span>
-                              <span class="fa fa-star"></span>
-                              
-                          </div>
-  
-                          </div>
-                        <!-- div-3 -->
-                        <div class="h-[320px] w-[320px] bg-slate-300 shadow-lg shadow-indigo-500/40 hover:bg-indigo-600 hover:text-white transition duration-500">
-                            <i class="fa-sharp fa-solid fa-quote-right ml-[260px] -mt-10 scale-[4] text-orange-600"></i>
-                            <div class="flex">
-                              <img src="/image for website/image 3.jpg" alt=""
-                              loading="lazy"
-                              class="h-[100px] rounded-full mt-10 ml-5 hover:scale-[1.2] transition duration-300">
-                              <div>
-                                <h2 class="text-[18px] font-bold font-serif ml-2 mt-10">PUNEET SHARMA</h2>
-                                <p class="mt-2 ml-3 font-light font-serif">Hye Everyone</p>
-                              </div>
-                            </div>
-                            <p class="mt-5 ml-5 font-thin font-serif opacity-80"> Lorem ipsum dolor sit amet, consectetur adipisicing
+                            <p class="mt-5 ml-5 font-thin font-serif opacity-80"> Lorem ipsum dolor sit amet,
+                                consectetur adipisicing
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </p>
                             <div class="flex justify-center mt-5 mb-5">
-                              <span class="fa fa-star text-orange-600"></span>
-                              <span class="fa fa-star checked text-orange-600"></span>
-                              <span class="fa fa-star checked text-orange-600"></span>
-                              <span class="fa fa-star checked text-orange-600"></span>
-                              <span class="fa fa-star "></span>
-                              
-                          </div>
-  
-                          </div>
-                        <!-- div-4 -->
-                        <div class="h-[320px] w-[320px] bg-slate-300 shadow-lg shadow-indigo-500/40 hover:bg-indigo-600 hover:text-white transition duration-500">
+                                <span class="fa fa-star text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star"></span>
+
+                            </div>
+
+                        </div>
+                        <!-- div-3 -->
+                        <div
+                            class="h-[320px] w-[320px] bg-slate-300 shadow-lg shadow-indigo-500/40 hover:bg-indigo-600 hover:text-white transition duration-500">
                             <i class="fa-sharp fa-solid fa-quote-right ml-[260px] -mt-10 scale-[4] text-orange-600"></i>
                             <div class="flex">
-                              <img src="/img/img 30.jpg" alt=""
-                              loading="lazy"
-                              class="h-[100px] rounded-full mt-10 ml-5 hover:scale-[1.2] transition duration-600">
-                              <div>
-                                <h2 class="text-[18px] font-bold font-serif ml-2 mt-10">PRAGYA</h2>
-                              <p class="mt-2 ml-3 font-light font-serif">Hi Everyone</p>
-                              </div>
+                                <img src="/image for website/image 3.jpg" alt="" loading="lazy"
+                                    class="h-[100px] rounded-full mt-10 ml-5 hover:scale-[1.2] transition duration-300">
+                                <div>
+                                    <h2 class="text-[18px] font-bold font-serif ml-2 mt-10">PUNEET SHARMA</h2>
+                                    <p class="mt-2 ml-3 font-light font-serif">Hye Everyone</p>
+                                </div>
                             </div>
-                            <p class="mt-5 ml-5 font-thin font-serif opacity-80"> Lorem ipsum dolor sit amet, consectetur adipisicing
+                            <p class="mt-5 ml-5 font-thin font-serif opacity-80"> Lorem ipsum dolor sit amet,
+                                consectetur adipisicing
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            </p> 
-                           <div class="flex justify-center mt-5 mb-5">
-                              <span class="fa fa-star text-orange-600"></span>
-                              <span class="fa fa-star checked text-orange-600"></span>
-                              <span class="fa fa-star checked text-orange-600"></span>
-                              <span class="fa fa-star checked "></span>
-                              <span class="fa fa-star "></span>
-                              
-                          </div>
-  
-                          </div>
+                            </p>
+                            <div class="flex justify-center mt-5 mb-5">
+                                <span class="fa fa-star text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star "></span>
+
+                            </div>
+
+                        </div>
+                        <!-- div-4 -->
+                        <div
+                            class="h-[320px] w-[320px] bg-slate-300 shadow-lg shadow-indigo-500/40 hover:bg-indigo-600 hover:text-white transition duration-500">
+                            <i class="fa-sharp fa-solid fa-quote-right ml-[260px] -mt-10 scale-[4] text-orange-600"></i>
+                            <div class="flex">
+                                <img src="/img/img 30.jpg" alt="" loading="lazy"
+                                    class="h-[100px] rounded-full mt-10 ml-5 hover:scale-[1.2] transition duration-600">
+                                <div>
+                                    <h2 class="text-[18px] font-bold font-serif ml-2 mt-10">PRAGYA</h2>
+                                    <p class="mt-2 ml-3 font-light font-serif">Hi Everyone</p>
+                                </div>
+                            </div>
+                            <p class="mt-5 ml-5 font-thin font-serif opacity-80"> Lorem ipsum dolor sit amet,
+                                consectetur adipisicing
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="flex justify-center mt-5 mb-5">
+                                <span class="fa fa-star text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star checked text-orange-600"></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star "></span>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -578,34 +629,42 @@
             <!-- Contact Us Section -->
             <section class="h-[800px] bg-slate-200" id="Contact">
                 <div class="">
-                
-                        <h1 class="text-[80px] flex justify-center pt-10 font-bold font-serif text-black">Contact Us</h1>
-                
+
+                    <h1 class="text-[80px] flex justify-center pt-10 font-bold font-serif text-black">Contact Us</h1>
+
                     <!-- big div -->
-                    <div class="flex justify-between relative mt-5">  
+                    <div class="flex justify-between relative mt-5">
                         <!-- left div -->
                         <div class=" h-[800px] w-[700px] -mt-20 ml-10">
-                            <img src="/img/group.webp" alt=""
-                            class="h-[700px] scale-[1.2]">
+                            <img src="/img/group.webp" alt="" class="h-[700px] scale-[1.2]">
                         </div>
                         <!-- right div -->
-                       
+
                         <div class="mt-10 h-[500px] w-[650px] flex flex-col gap-5 mr-44  bg-indigo-300 rounded-md p-5">
-                        
+
                             <!-- contact div -->
-                             
-                             <form name="contact-us" action=""> 
+
+                            <form name="contact-us" action="">
 
                                 <label for="text"></label>
-                                <input type="text" name="Person" id="Person" class=" h-[50px] w-[600px] p-5 font-bold rounded-md font-serif text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Name">
+                                <input type="text" name="Person" id="Person"
+                                    class=" h-[50px] w-[600px] p-5 font-bold rounded-md font-serif text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950"
+                                    placeholder="Enter Your Name">
                                 <label for="email"></label>
-                                <input type="email" name="Email" id="" required class="h-[50px] w-[600px] mt-5 p-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Email">
+                                <input type="email" name="Email" id="" required
+                                    class="h-[50px] w-[600px] mt-5 p-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950"
+                                    placeholder="Enter Your Email">
                                 <label for="contact"></label>
-                                <input type="text" name="Number" class="h-[50px] w-[600px] mt-5 p-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Your Number">
-                                <textarea name="Message" id="" cols="20" rows="5" class="font-bold p-5 font-serif rounded-md w-[600px] mt-5 text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950" placeholder="Enter Message"></textarea>
-                                <button class=" h-[50px] w-[300px] mt-5 ml-[140px]  bg-orange-600 rounded-md hover:bg-indigo-600 hover:text-white border-2 hover:border-indigo-950  font-bold font-serif text-black shadow-lg shadow-indigo-500/40">Submit</button>
- 
-                             </form>
+                                <input type="text" name="Number"
+                                    class="h-[50px] w-[600px] mt-5 p-5 font-bold font-serif rounded-md text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950"
+                                    placeholder="Enter Your Number">
+                                <textarea name="Message" id="" cols="20" rows="5"
+                                    class="font-bold p-5 font-serif rounded-md w-[600px] mt-5 text-black shadow-lg shadow-indigo-500/40 border-2 hover:border-indigo-950"
+                                    placeholder="Enter Message"></textarea>
+                                <button
+                                    class=" h-[50px] w-[300px] mt-5 ml-[140px]  bg-orange-600 rounded-md hover:bg-indigo-600 hover:text-white border-2 hover:border-indigo-950  font-bold font-serif text-black shadow-lg shadow-indigo-500/40">Submit</button>
+
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -613,24 +672,29 @@
 
             <!-- Neswletter Section -->
             <section class="h-[800px] bg-no-repeat bg-cover" style="background-image: url('/img/img 22.jpg')">
-                <div >
+                <div>
                     <h1 class="text-[60px] font-extrabold font-serif mx-auto flex justify-center pt-40">
                         Subscribe Neswletter & <br>
                         Get Company News
                     </h1>
 
-                   <div class="h-[150px] w-[600px] bg-black mx-auto mt-20 flex justify-center rounded-xl bg-transparent border-4 shadow-transparent">
-                    <div class=" border-2 h-[60px] mx-auto rounded-md bg-white flex justify-around items-center w-[500px] ml-12 mt-10 hover:border-indigo-950">
-                            
-                        <label for="name"></label>
-                        <input class="text-black flex items-center justify-center outline-none p-5 mr-[10px] w-[300px] h-10 border-none" type="email" id="name" placeholder="Enter Your Email">
+                    <div
+                        class="h-[150px] w-[600px] bg-black mx-auto mt-20 flex justify-center rounded-xl bg-transparent border-4 shadow-transparent">
+                        <div
+                            class=" border-2 h-[60px] mx-auto rounded-md bg-white flex justify-around items-center w-[500px] ml-12 mt-10 hover:border-indigo-950">
 
-                        <button class="bg-orange-600 text-white h-[40px] w-[150px] flex justify-center items-center rounded-md mr-5 gap-3 hover:bg-indigo-950"> 
-                            Subscribe
-                        </button>
-                </div> 
-                   </div>
-                    
+                            <label for="name"></label>
+                            <input
+                                class="text-black flex items-center justify-center outline-none p-5 mr-[10px] w-[300px] h-10 border-none"
+                                type="email" id="name" placeholder="Enter Your Email">
+
+                            <button
+                                class="bg-orange-600 text-white h-[40px] w-[150px] flex justify-center items-center rounded-md mr-5 gap-3 hover:bg-indigo-950">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -640,13 +704,13 @@
                     <!-- div-1 -->
                     <div>
                         <h1 class="text-orange-500 text-[20px] font-extrabold">Company</h1>
-                       <div class="text-white pt-5">
-                        <p> <i class="fa-sharp fa-solid fa-angles-right mr-2"></i>  About</p>
-                        <p> <i class="fa-sharp fa-solid fa-angles-right mr-2"></i>  Contact us</p>
-                        <p> <i class="fa-sharp fa-solid fa-angles-right mr-2"></i>  Reservation</p>
-                        <p> <i class="fa-sharp fa-solid fa-angles-right mr-2"></i>  Privacy</p>
-                        <p> <i class="fa-sharp fa-solid fa-angles-right mr-1"></i>  Term & Condition</p>
-                       </div>
+                        <div class="text-white pt-5">
+                            <p> <i class="fa-sharp fa-solid fa-angles-right mr-2"></i> About</p>
+                            <p> <i class="fa-sharp fa-solid fa-angles-right mr-2"></i> Contact us</p>
+                            <p> <i class="fa-sharp fa-solid fa-angles-right mr-2"></i> Reservation</p>
+                            <p> <i class="fa-sharp fa-solid fa-angles-right mr-2"></i> Privacy</p>
+                            <p> <i class="fa-sharp fa-solid fa-angles-right mr-1"></i> Term & Condition</p>
+                        </div>
                     </div>
                     <!-- div -2 -->
                     <div>
@@ -656,7 +720,7 @@
                             <p> <i class="fa-sharp fa-solid fa-phone-volume mr-1"></i> +91 8449813808</p>
                             <p> <i class="fa-sharp fa-solid fa-envelope mr-2"></i> help@gmail.com</p>
                         </div>
-        
+
                     </div>
                     <!-- div 3 -->
                     <div>
@@ -673,13 +737,17 @@
                     <div>
                         <h1 class="text-orange-500 text-[20px] font-extrabold">Newsletter</h1>
                         <p class="text-white pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class=" border-2 h-[60px] mt-10 rounded-md bg-slate-50 flex justify-between items-center hover:border-indigo-950 transition duration-300">
+                        <div
+                            class=" border-2 h-[60px] mt-10 rounded-md bg-slate-50 flex justify-between items-center hover:border-indigo-950 transition duration-300">
 
                             <label for="What do you want to learn"></label>
-                            <input type="email" class="text-slate-600 h-full w-full p-5 flex items-center rounded-md outline-none justify-center" placeholder="What do you want to learn ?"> 
-            
-                            <button class="bg-indigo-950 text-white h-[40px] w-[130px] flex justify-center items-center rounded-md mr-5 hover:bg-orange-500"> 
-                            <i class="fa-solid fa-magnifying-glass mr-2"></i>Search</button>
+                            <input type="email"
+                                class="text-slate-600 h-full w-full p-5 flex items-center rounded-md outline-none justify-center"
+                                placeholder="What do you want to learn ?">
+
+                            <button
+                                class="bg-indigo-950 text-white h-[40px] w-[130px] flex justify-center items-center rounded-md mr-5 hover:bg-orange-500">
+                                <i class="fa-solid fa-magnifying-glass mr-2"></i>Search</button>
                         </div>
                     </div>
                 </div>
@@ -691,15 +759,29 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbx3SN60WG8jnX3DJklxkI4YwWWNs3GWFShJS4_921JVEa8RnOpDfJHXoZJj6Scr2y4hLg/exec'
         const form = document.forms['contact-us']
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
         })
+<<<<<<< HEAD
       </script>
     <script src="autocomplete.js"></script>   
 </body>
 </html>
+=======
+    </script>
+    <script src="autocomplete.js"></script>
 
+    <!-- 10 Best Place for Couples in Bhopal -->
+    <section class="h-[700px]">
+        <div class="bg-[url('/City/City-img/Bhopal-Couple-img 1.jpg')]"></div>
+>>>>>>> e1711fb915435ae2a4af5bfb5f407aa1cdffa58b
+
+    </section>
+
+</body>
+
+</html>
