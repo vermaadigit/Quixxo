@@ -3,7 +3,6 @@ let availableKeywords = [
     'Colleges',
     'Hospitals',
     'Hotels',
-    'Parks',
 ];
 
 const resultBox = document.querySelector(".result-box");
