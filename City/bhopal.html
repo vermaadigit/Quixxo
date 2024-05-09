@@ -6,6 +6,35 @@
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Bhopal</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("search-btn").addEventListener("click", function () {
+                var input = document.getElementById("input-box").value.toLowerCase();
+                switch (input) {
+                    case "restaurant":
+                        window.location.href ="Spots/Restaurant.html";
+                        break;
+                    case "colleges":
+                        window.location.href = "Spots/Colleges.html";
+                        break;
+                    case "hospitals":
+                        window.location.href = "Spots/Hospitals.html";
+                        break;
+                    case "hotels":
+                        window.location.href = "Spots/Hotels.html";
+                        break;
+                    case "parks":
+                        window.location.href = "./City/Parks.html";
+                        break;
+                    default:
+                        alert("City not found!");
+                        break;
+                }
+            });
+        });
+    </script>
+
 </head>
 <body>
      <!-- bhopal section -->
@@ -46,7 +75,25 @@
       <!-- hero section  -->
       <section class="h-[700px]">
           <div class="flex justify-center mt-16">
-              <h1 class="text-[100px] font-extrabold font-serif">BHO<i class="fa-solid fa-location-pin-lock scale-[] mt-[112px] text-orange-600"></i>PAL</h1> 
+              <h1 class="text-[100px] font-extrabold font-serif">BHO<i class="fa-solid fa-location-pin-lock scale-[] mt-[112px] text-orange-600"></i>PAL</h1>
+
+          </div>
+          <div
+                  class="search-box w-[600px] bg-white rounded-[5px] mt-10 ml-5 border-2 hover:border-indigo-900">
+              <div class="row flex items-center py-[10px] px-[20px]">
+                  <input type="text" id="input-box" placeholder="Search your Favourite spots in Bhopal..."
+                         autocomplete="off"
+                         class="flex-1 h-[50px] bg-transparent border-0 outline-none font-[18px] text-[#333]">
+                  <button id="search-btn" class="bg-transparent border-none outline-none"><i
+                          class="fa-solid fa-magnifying-glass w-[25px]
+                                       text-[22px] cursor-pointer text-orange-600 hover:text-indigo-900 transition duration-300"></i></button>
+              </div>
+              <div class="result-box">
+                  <!-- <ul>
+                      <li></li>
+                      <li></li>
+                  </ul> -->
+              </div>
           </div>
           <div class="flex justify-center mt-16">
               <!-- big-div -->
@@ -64,7 +111,8 @@
                   <p class="text-[20px] font-medium font-serif mt-5">Following India's independence in 1947, Bhopal acceded to the newly formed nation in 1949, subsequently becoming part of the state of Madhya Pradesh in 1956. Despite its evolving political status, Bhopal's rich historical legacy endures through its architectural wonders like the Gohar Mahal and Taj Mahal, constructed during the reign of the Begums. Today, Bhopal thrives as a dynamic district, seamlessly blending its illustrious past with contemporary advancements, embodying the resilience and cultural richness of its heritage.</p>
                  </div>
               </div>
-          </div>  
+          </div>
+
       </section>
 
       <!-- 10 Best Place for Couples in Bhopal -->
@@ -145,13 +193,14 @@
       Taj-ul-Masajid is a mosque situated in Bhopal, India. The name is also spelt as Taj-ul-Masjid. “Masajid” means “mosques” (Plural of “masjid”) and “Taj-ul-Masajid” literally means “Crown Among Mosques”. It is the largest mosque in India and one of the largest mosques in Asia’s. Please click to know the more details:
       <a href="Tujul-Masajad.html">Read More</a>
       </p>
-        </div>    
+        </div>
+
       </section>
+  </div>
+
 
       <!-- footer -->
-      
 
-  </div>
-  
+  <script src="autocompletes.js"></script>
 </body>
 </html>
